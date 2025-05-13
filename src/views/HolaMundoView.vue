@@ -4,13 +4,14 @@
 
 <script>
 import hm from '../components/HolaMundo.vue'
+import ejemplo from '../components/HelloWorld.vue'
 export default {
     components:{
-        hm
+        hm,
+        ejemplo
     }
 }
 </script>
-
 <style>
 
 </style>
