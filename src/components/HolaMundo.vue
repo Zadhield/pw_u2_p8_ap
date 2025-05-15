@@ -27,7 +27,7 @@ h2 {
  
 p {
     color: green;
-    background: blue;
+    background: rgb(146, 146, 243);
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
 }

@@ -1,14 +1,16 @@
 <template>
-  <hm/>
+  <!--<hm/> -->
+  <Contador/>
 </template>
 
 <script>
 import hm from './views/HolaMundoView.vue'
+import Contador from "@/views/ContadorView.vue"
 
 export default {
   name: 'App',
   components: {
-    hm
+    Contador
   }
 }
 </script>
