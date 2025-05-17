@@ -1,23 +1,21 @@
 <template>
   <div class="container">
     <label for="id_nombre"> Nombre:</label>
-    <input v-model="nuevoNombre" id="id_nombre" type="text" />
+    <input v-model="nuevoNombre" id="id_nombre" type="text" placeholder="Nombre"/>
 
     <label for="id_apellido"> Apellido:</label>
-    <input v-model="nuevoApellido" id="id_apellido" type="text" />
+    <input v-model="nuevoApellido" id="id_apellido" type="text" placeholder="Apellido" />
 
     <label for="id_edad">Edad:</label>
-    <input v-model="nuevaEdad" id="id_edad" type="number" />
+    <input v-model="nuevaEdad" id="id_edad" type="number" placeholder="Edad"/>
 
     <label for="id_carrera">Carrera:</label>
-    <input v-model="nuevaCarrera" id="id_carrera" type="text" />
+    <input v-model="nuevaCarrera" id="id_carrera" type="text" placeholder="Carrera"/>
 
     <label for="id_correo">Correo:</label>
-    <input v-model="nuevoCorreo" id="id_correo" type="email" />
+    <input v-model="nuevoCorreo" id="id_correo" type="email" placeholder="correo" />
 
-    <button v-on:click="agregarEstudiante()">Agregar Estudiante</button>
-
-
+    <button v-on:click="agregarEstudiante()">Agregar</button>
     <ul>
       <li v-for="{nombre, apellido, edad, carrera, correo} in lista" :key="nombre">
        <strong>Nombre:</strong>{{ nombre }}- <strong>Apellido:</strong>{{ apellido }}- <strong> Edad:</strong>{{ edad }}-
@@ -104,22 +102,55 @@ export default {
 };
 </script>
 
-<style>
-.container{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  max-width: 400px;
-  margin: 0 auto;
+<style scoped>
+.container {
+  background: #fff;
+  border: 1px solid;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
 }
-button {
-  padding: 8px;
-  background-color: #3498db;
-  color: white;
-  border: solid;
-}
-ul {
-  margin-top: 20px;
+ 
+label {
+  display: block;
+  color: #333;
   text-align: left;
+}
+ 
+input {
+  background: #4e91f9;
+  color: #fff;
+  width: 90%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+}
+
+button{
+  background: #045fe8;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100px;
+}
+ul{
+  list-style: none;
+  margin-top: 20px;
+  display: block;
+  color: #333;
+  text-align: left;
+}
+li{
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 15px;
 }
 </style>

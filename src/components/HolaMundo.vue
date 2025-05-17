@@ -16,7 +16,7 @@ export default {
 
 
  
-<style>
+<style scoped>
 .titulo {
     color: red;
 }
