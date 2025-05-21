@@ -2,7 +2,8 @@
   <!--<hm/> -->
   <!--<Contador/>-->
   <!--<EstudianteView/>-->
-  <EstudianteTablaView/>
+ <!-- <EstudianteTablaView/>-->
+ <FormularioView/>
 </template>
 
 <script>
@@ -10,6 +11,7 @@ import hm from './views/HolaMundoView.vue'
 import Contador from "@/views/ContadorView.vue"
 import EstudianteView from "@/views/EstudianteView.vue"
 import EstudianteTablaView from './views/EstudianteTablaView.vue'
+import FormularioView from './views/FormularioView.vue'
 
 export default {
   name: 'App',
@@ -18,6 +20,7 @@ export default {
     Contador,
     EstudianteView,
     EstudianteTablaView,
+    FormularioView,
   }
 }
 </script>

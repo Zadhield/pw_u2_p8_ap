@@ -48,7 +48,7 @@
 export default {
   data() {
     return {
-      nuevoNombre: "",
+      nuevoNombre1: "",
       nuevoApellido: "",
       nuevaEdad: "",
       nuevaCarrera: "",
