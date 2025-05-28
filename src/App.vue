@@ -2,21 +2,24 @@
   <!--<hm/> -->
   <!--<Contador/>-->
   <!--<EstudianteView/>-->
- <!-- <EstudianteTablaView/>-->
- <!-- <FormularioView/>-->
- <PreguntaView/>
+  <!-- <EstudianteTablaView/>-->
+  <!-- <FormularioView/>-->
+  <!-- <FormularioView/>-->
+  <!--<PreguntaView/>-->
+  <ClienteView />
 </template>
 
 <script>
-import hm from './views/HolaMundoView.vue'
-import Contador from "@/views/ContadorView.vue"
-import EstudianteView from "@/views/EstudianteView.vue"
-import EstudianteTablaView from './views/EstudianteTablaView.vue'
-import FormularioView from './views/FormularioView.vue'
-import PreguntaView from './views/PreguntaView.vue'
+import hm from "./views/HolaMundoView.vue";
+import Contador from "@/views/ContadorView.vue";
+import EstudianteView from "@/views/EstudianteView.vue";
+import EstudianteTablaView from "./views/EstudianteTablaView.vue";
+import FormularioView from "./views/FormularioView.vue";
+import PreguntaView from "./views/PreguntaView.vue";
+import ClienteView from "./views/ClienteView.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     hm,
     Contador,
@@ -24,8 +27,9 @@ export default {
     EstudianteTablaView,
     FormularioView,
     PreguntaView,
-  }
-}
+    ClienteView,
+  },
+};
 </script>
 
 <style>
